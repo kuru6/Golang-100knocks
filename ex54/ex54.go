@@ -1,5 +1,1 @@
-package main
-
-func main() {
-	// ex54
-}
+f
