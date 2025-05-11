@@ -15,11 +15,10 @@ func main() {
 	money, _ := strconv.Atoi(textmoney)
 	fmt.Printf("レートを入力して")
 	scanner.Scan()
-	textchangemoney := scanner.Text()
-	changemoney, _ := strconv.Atoi(textchangemoney)
-	ryougaego := money / changemoney
-	var cent float32
-	cent = money / changemoney
-	fmt.Printf("%d円は、ドルに両替すると%dドル%fセントになるよ", money, ryougaego, cent)
-
+	textrate := scanner.Text()
+	rate, _ := strconv.Atoi(textrate)
+	ryougaego := money / rate
+	cent := (money * 100 / rate) % 100
+	fmt.Println(1000 % 120)
+	fmt.Printf("%d円は、ドルに両替すると%dドル%dセントになる", money, ryougaego, cent)
 }
