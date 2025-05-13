@@ -1,5 +1,7 @@
 package main
 
 func main() {
-	// ex82
+	for i := 0; i <= 15; i++ {
+
+	}
 }
